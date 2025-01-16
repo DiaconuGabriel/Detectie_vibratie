@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proiect masurare vibratie</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+        <!-- include only the Firebase features as you need -->
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+        <script>
+                    
+            const firebaseConfig = {
+                apiKey: "AIzaSyAstBAygWMzjGSeDzuLr5qYVg8Zg8cZmx0",
+                authDomain: "proiect-final-ed909.firebaseapp.com",
+                databaseURL: "https://proiect-final-ed909-default-rtdb.europe-west1.firebasedatabase.app",
+                projectId: "proiect-final-ed909",
+                storageBucket: "proiect-final-ed909.appspot.com",
+                messagingSenderId: "749143326759",
+                appId: "1:749143326759:web:75e6bf6af6dd2a8b24ce02",
+                // measurementId: "G-P45LJ6482T"
+            };
+        
+            // Initialize firebase
+            firebase.initializeApp(firebaseConfig);
+        
+            // Make auth and database references
+            const auth = firebase.auth();
+            const database = firebase.database();
+                
+        </script>
+    </head>
+    
+    <body>
+    
+        <div class="wrapper" id="wrapper-cl" style="display: none;">
+            <form method="POST" id="login-form">
+                <h1>LOGIN</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Email" required id="input-email">
+                </div>
+                <div class="input-box">
+                    <input type="Password" placeholder="Password" required id="input-password">
+                </div>
+                <button type="submit" class="btn">LOGIN</button>
+            </form>
+        </div>
+    
+        <div class="content" id="content" style="display: none;">
+            
+            <p>Welcome! You are now logged in.</p>
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+        <script src="scripts/grafic.js"></script> 
+        <script src="scripts/main.js"></script>
+        <script src="scripts/auth.js"></script>
+
+</body>
+</html>
