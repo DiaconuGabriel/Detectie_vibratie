@@ -10,7 +10,7 @@ TaskHandle_t Task2;
 SemaphoreHandle_t mymutex;
 
 const char* WIFI_SSID = "your-wifi-name";
-const char* WIFI_PASSWORD = "your-wifi-password;
+const char* WIFI_PASSWORD = "your-wifi-password";
 
 // Insert Firebase project API Key
 const char* API_KEY = "your_api_key"; 
