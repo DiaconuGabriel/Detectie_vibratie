@@ -9,18 +9,18 @@ TaskHandle_t Task1;
 TaskHandle_t Task2;
 SemaphoreHandle_t mymutex;
 
-const char* WIFI_SSID = "Galaxy S10+d966";
-const char* WIFI_PASSWORD = "yroo6271";
+const char* WIFI_SSID = "your-wifi-name";
+const char* WIFI_PASSWORD = "your-wifi-password;
 
 // Insert Firebase project API Key
-const char* API_KEY = "AIzaSyAstBAygWMzjGSeDzuLr5qYVg8Zg8cZmx0"; 
+const char* API_KEY = "your_api_key"; 
 
 // Insert Authorized Email and Corresponding Password
-const char* USER_EMAIL =  "gabrieldiaconu16@gmail.com";
-const char* USER_PASSWORD =  "parola";
+const char* USER_EMAIL =  "email-user";
+const char* USER_PASSWORD =  "email-password";
 
 // Insert RTDB URLefine the RTDB URL
-const char* DATABASE_URL = "https://proiect-final-ed909-default-rtdb.europe-west1.firebasedatabase.app/:null"; 
+const char* DATABASE_URL = "your-data-base-url"; 
 
 // Define Firebase objects
 FirebaseData fbdo;
